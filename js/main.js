@@ -10,8 +10,10 @@ function btnAddTask() {
     taskDisplay.classList.add("displayClassList");
     taskDisplay.innerText = addTaskInput;
     var taskList = document.getElementById("showtasks");
+    var breakDown = document.createElement("br");
     taskList.appendChild(doneCheckBox);
     taskList.appendChild(taskDisplay);
+    taskList.appendChild(breakDown);
     clearTextBox();
     function clearTextBox() {
         document.getElementById("inputs").focus();

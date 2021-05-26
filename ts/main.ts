@@ -19,8 +19,11 @@ function btnAddTask()
 
     //display on page
     let taskList = document.getElementById("showtasks");
+    let breakDown = document.createElement("br");
+
     taskList.appendChild(doneCheckBox);
     taskList.appendChild(taskDisplay);
+    taskList.appendChild(breakDown);
 
     clearTextBox();
 
@@ -31,4 +34,22 @@ function btnAddTask()
         (<HTMLInputElement>document.getElementById("inputs")).value = "";
 
     }
+    // function addCombo()
+    // {
+    //     var textb = <HTMLInputElement>document.getElementById("inputs");
+    //     var combo = <HTMLInputElement>document.getElementById("tasklist");
+        
+    //     var option = <HTMLInputElement>document.createElement("option");
+    //     option.text = textb.value;
+    //     option.value = textb.value;
+    //     try
+    //     {
+    //         combo.add(option, null); //Standard 
+    //     }
+    //     catch(error) 
+    //     {
+    //         combo.add(option); // IE only
+    //     }
+    //     textb.value = "";
+    // }
 }
